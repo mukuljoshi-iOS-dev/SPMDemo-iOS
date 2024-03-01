@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "spmdemo-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mukuljoshi-iOS-dev/SPMDemo-iOS.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "bbb3bab79e89a774e8e7195e0080326a81496ef1"
+      }
+    }
+  ],
+  "version" : 2
+}

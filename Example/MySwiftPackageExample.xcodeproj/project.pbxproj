@@ -11,6 +11,7 @@
 		1B3EE3392B91FC5600261C88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3EE3382B91FC5600261C88 /* ContentView.swift */; };
 		1B3EE33B2B91FC5900261C88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3EE33A2B91FC5900261C88 /* Assets.xcassets */; };
 		1B3EE33E2B91FC5900261C88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3EE33D2B91FC5900261C88 /* Preview Assets.xcassets */; };
+		1B3EE3462B9200BA00261C88 /* SPM-Demo in Frameworks */ = {isa = PBXBuildFile; productRef = 1B3EE3452B9200BA00261C88 /* SPM-Demo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3EE3462B9200BA00261C88 /* SPM-Demo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = MySwiftPackageExample;
+			packageProductDependencies = (
+				1B3EE3452B9200BA00261C88 /* SPM-Demo */,
+			);
 			productName = MySwiftPackageExample;
 			productReference = 1B3EE3332B91FC5600261C88 /* MySwiftPackageExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 1B3EE32A2B91FC5500261C88;
+			packageReferences = (
+				1B3EE3442B9200BA00261C88 /* XCRemoteSwiftPackageReference "SPMDemo-iOS" */,
+			);
 			productRefGroup = 1B3EE3342B91FC5600261C88 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B3EE3442B9200BA00261C88 /* XCRemoteSwiftPackageReference "SPMDemo-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mukuljoshi-iOS-dev/SPMDemo-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B3EE3452B9200BA00261C88 /* SPM-Demo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B3EE3442B9200BA00261C88 /* XCRemoteSwiftPackageReference "SPMDemo-iOS" */;
+			productName = "SPM-Demo";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B3EE32B2B91FC5500261C88 /* Project object */;
 }
