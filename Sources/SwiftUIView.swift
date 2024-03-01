@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import SwiftUI
 
 public class Computation {
     var inputLength = 0
