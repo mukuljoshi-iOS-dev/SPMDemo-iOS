@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SPM_Demo
+
 
 struct ContentView: View {
     var body: some View {
@@ -17,6 +19,9 @@ struct ContentView: View {
         }
         .padding()
     }
+    
+    let peri = Computation(
+    
 }
 
 #Preview {

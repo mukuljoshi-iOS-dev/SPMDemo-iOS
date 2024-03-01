@@ -8,14 +8,16 @@
 import Foundation
 import SwiftUI
 
-@available(macOS 10.15, *)
-extension View {
-    public func centerHorizontally() -> some View {
-        HStack {
-            Spacer()
-            self
-            Spacer()
-        }
+public class Computation {
+    var inputLength = 0
+    var inputWidth = 0
+    
+    public init(inputLength: Int = 0, inputWidth: Int = 0) {
+        self.inputLength = inputLength
+        self.inputWidth = inputWidth
+    }
+
+    public func rectanglePerimeter() -> Int {
+        return inputWidth * 2 + inputLength * 2
     }
 }
-
