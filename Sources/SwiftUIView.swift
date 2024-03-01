@@ -6,17 +6,13 @@
 //
 
 import Foundation
+import SwiftUI
 
-public class Computation {
-    var inputLength = 0
-    var inputWidth = 0
+public struct SwiftUIView: View {
+
+    public init() {}
     
-    public init(inputLength: Int = 0, inputWidth: Int = 0) {
-        self.inputLength = inputLength
-        self.inputWidth = inputWidth
-    }
-
-    public func rectanglePerimeter() -> Int {
-        return inputWidth * 2 + inputLength * 2
+    public var body: some View {
+        Text("This is from the SPM. We are testing the SPM")
     }
 }
