@@ -17,3 +17,8 @@ public struct SwiftUIView: View {
         Text("This is from the SPM. We are testing the SPM")
     }
 }
+
+@available(macOS 10.15.0, *)
+#Preview {
+    SwiftUIView()
+}
