@@ -17,16 +17,16 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            let square = Shape.square(side: 5.0)
-            Text("Area of square of side \(side): \(square.area())")
+            let square = Shape.square(side: side)
+            Text("Area of square of side \(side): \(square.area(), specifier: "%.2f")")
                 .padding(30)
             
-            let rectangle = Shape.rectangle(length: 4.0, width: 6.0)
-            Text("Area of rectangle of \(length) x \(width): \(rectangle.area())")
+            let rectangle = Shape.rectangle(length: length, width: width)
+            Text("Area of rectangle of \(length) x \(width): \(rectangle.area(), specifier: "%.2f")")
                 .padding(30)
 
-            let circle = Shape.circle(radius: 3.0)
-            Text("Area of circle of radius \(radius): \(circle.area())")
+            let circle = Shape.circle(radius: radius)
+            Text("Area of circle of radius \(radius): \(circle.area(), specifier: "%.2f")")
             
             Spacer()
         }
