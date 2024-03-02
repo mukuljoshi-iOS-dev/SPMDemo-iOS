@@ -8,12 +8,12 @@
 import Foundation
 
 @available(macOS 10.15.0, *)
-enum Shape {
+public enum Shape {
     case square(side: Double)
     case rectangle(length: Double, width: Double)
     case circle(radius: Double)
     
-    func area() -> Double {
+    public func area() -> Double {
         switch self {
         case .square(let side):
             return side * side
