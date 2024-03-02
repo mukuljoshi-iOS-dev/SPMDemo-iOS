@@ -8,6 +8,7 @@
 import Foundation
 import SwiftUI
 
+@available(macOS 10.15.0, *)
 public struct SwiftUIView: View {
 
     public init() {}
