@@ -6,19 +6,21 @@
 //
 
 import Foundation
-import SwiftUI
 
 @available(macOS 10.15.0, *)
-public struct SwiftUIView: View {
-
-    public init() {}
+enum Shape {
+    case square(side: Double)
+    case rectangle(length: Double, width: Double)
+    case circle(radius: Double)
     
-    public var body: some View {
-        Text("This is from the SPM. We are testing the SPM")
+    func area() -> Double {
+        switch self {
+        case .square(let side):
+            return side * side
+        case .rectangle(let length, let width):
+            return length * width
+        case .circle(let radius):
+            return Double.pi * radius * radius
+        }
     }
-}
-
-@available(macOS 10.15.0, *)
-#Preview {
-    SwiftUIView()
 }
